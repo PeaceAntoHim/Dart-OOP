@@ -18,8 +18,16 @@ class Person {
   String getName() {
     return "Hello, my name is $name";
   }
-
 }
+
+  // made extension method
+  extension SayGoodByeOnPerson on Person {
+
+    void sayGoodBye(String paramName) {
+      print("Good Bye $paramName, from $name");
+    }
+  }
+
 
 void main() {
   
@@ -41,6 +49,10 @@ void main() {
   print('\n This access method class person');
   person1.sayHello("Eko");
   person1.hello();
+
+  // This to call method extension
+  print('\n This access method extensions method');
+  person1.sayGoodBye("Jokotingkir");
 
 
 }
