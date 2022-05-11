@@ -8,9 +8,7 @@ class Customer {
     // This is initializer List
     : firstName = fullName.split(" ")[0],
       lastName = fullName.split(" ")[1] {
-
       print('Create New Customer');
-
     }
 }
 
