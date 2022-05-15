@@ -12,7 +12,10 @@ class Car {
   }
 }
 
-//
+// This wolll implemets more interface
+abstract class HasBrand {
+  String getBrand();
+}
 
 // if you want to add implementation u have to implement interface again
     class Avanza implements Car{
@@ -28,15 +31,16 @@ class Car {
     }
 
 // in implements we can added more class like this
+  class Agya implements Car, HasBrand{
+    String name = "Agya";
 
-  // class Agya implements Car, Car2{
-  //   String name = "Agya";
-  //
-  //   void drive() {
-  //     print('Agya is driving');
-  //   }
-  //
-  //   int getTier() {
-  //     return 4;
-  //   }
-  // }
+    String getBrand() => "Toyota";
+
+    void drive() {
+      print('Agya is driving');
+    }
+
+    int getTier() {
+      return 4;
+    }
+  }
