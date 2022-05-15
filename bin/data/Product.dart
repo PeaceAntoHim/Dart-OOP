@@ -15,5 +15,5 @@ void main() {
   product.id = '1';
   product.name = 'Product 1';
   product._quantity = 10;
-  print(product.getQuantity());
+  print(product._getQuantity());
 }
