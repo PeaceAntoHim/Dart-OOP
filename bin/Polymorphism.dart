@@ -11,6 +11,10 @@ class VicePresident extends Manager {
   VicePresident(String name) : super(name);
 }
 
+void sayHello(Employee employee) {
+  print('Hello ${employee.name}');
+}
+
 void main() {
   Employee employee = Employee('Frans');
   print(employee);
@@ -19,6 +23,11 @@ void main() {
   print(employee);
 
   employee = VicePresident('Joko');
-  print(employee);
+  print(Employee('Joko'));
+  print(Manager('Frans'));
+  print(VicePresident('Eko'));
+
+  // This is polymorphism in dart use faction
+  sayHello(employee);
 }
 
