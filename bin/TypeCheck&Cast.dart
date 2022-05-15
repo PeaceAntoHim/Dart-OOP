@@ -18,6 +18,7 @@ void sayHello(Employee employee) {
     VicePresident vicePresident = employee as VicePresident;
     print('Hello Vice President ${vicePresident.name}');
   } else if (employee is Manager) {
+    // If you was added is operator in type checy likek at else if code you can to use as operator
     Manager manager = employee as Manager;
     print('Hello Manager ${manager.name}');
   } else {
