@@ -23,11 +23,15 @@ void main() {
   // if we want to catch err wihout crash our app we need implemetns try and catch
 
   try {
-    Validation.validate('Frans', '12345');
-  } on ValidationException catch(e){
+    Validation.validate('Frans', '12f345');
+    // This implement stack trace
+  } on ValidationException catch(e, stackTrace){
     print('Vadlidation Error : ${e.message}');
-  } on Exception catch(e) {
+    print('Stack Trace : ${stackTrace.toString()}');
+    // This implemet stact trace in dart
+  } on Exception catch(e, stackTrace){
     print('Eror : ${e.toString()}');
+    print('Stack Trace : ${stackTrace.toString()}');
   } finally {
     print('Finish');
   }
