@@ -12,7 +12,9 @@ class Sum {
 
 }
 
-// How to create tyoedef
+// How to create typedef
+typedef Jumlah = Sum;
+typedef Total = Sum;
 
 void main() {
 
